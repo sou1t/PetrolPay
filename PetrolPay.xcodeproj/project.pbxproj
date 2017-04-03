@@ -7,14 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0545641E754EBE00177A4A /* RegistrationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545631E754EBE00177A4A /* RegistrationPageVC.swift */; };
+		3F0545661E7551AC00177A4A /* EnterPayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545651E7551AC00177A4A /* EnterPayVC.swift */; };
+		3F0545681E7551D500177A4A /* EnterGasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545671E7551D500177A4A /* EnterGasVC.swift */; };
+		3F05456A1E7551FC00177A4A /* EnterLoyalityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545691E7551FC00177A4A /* EnterLoyalityVC.swift */; };
+		3F05456C1E75521600177A4A /* EnterLoyality2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05456B1E75521600177A4A /* EnterLoyality2VC.swift */; };
+		3F05456E1E755D4400177A4A /* DotsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05456D1E755D4400177A4A /* DotsVC.swift */; };
+		3F21D3E51E8D3C3800EFF0D3 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3E41E8D3C3800EFF0D3 /* Networkable.swift */; };
+		3F21D3FB1E8D3D8F00EFF0D3 /* M13Checkbox+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3E71E8D3D8F00EFF0D3 /* M13Checkbox+IB.swift */; };
+		3F21D3FC1E8D3D8F00EFF0D3 /* M13Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3E81E8D3D8F00EFF0D3 /* M13Checkbox.swift */; };
+		3F21D3FD1E8D3D8F00EFF0D3 /* M13CheckboxAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3E91E8D3D8F00EFF0D3 /* M13CheckboxAnimationGenerator.swift */; };
+		3F21D3FE1E8D3D8F00EFF0D3 /* M13CheckboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3EA1E8D3D8F00EFF0D3 /* M13CheckboxController.swift */; };
+		3F21D3FF1E8D3D8F00EFF0D3 /* M13CheckboxGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3EB1E8D3D8F00EFF0D3 /* M13CheckboxGestureRecognizer.swift */; };
+		3F21D4001E8D3D8F00EFF0D3 /* M13CheckboxBounceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3ED1E8D3D8F00EFF0D3 /* M13CheckboxBounceController.swift */; };
+		3F21D4011E8D3D8F00EFF0D3 /* M13CheckboxDotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3EE1E8D3D8F00EFF0D3 /* M13CheckboxDotController.swift */; };
+		3F21D4021E8D3D8F00EFF0D3 /* M13CheckboxExpandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3EF1E8D3D8F00EFF0D3 /* M13CheckboxExpandController.swift */; };
+		3F21D4031E8D3D8F00EFF0D3 /* M13CheckboxFadeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3F01E8D3D8F00EFF0D3 /* M13CheckboxFadeController.swift */; };
+		3F21D4041E8D3D8F00EFF0D3 /* M13CheckboxFillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3F11E8D3D8F00EFF0D3 /* M13CheckboxFillController.swift */; };
+		3F21D4051E8D3D8F00EFF0D3 /* M13CheckboxFlatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3F21E8D3D8F00EFF0D3 /* M13CheckboxFlatController.swift */; };
+		3F21D4061E8D3D8F00EFF0D3 /* M13CheckboxSpiralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3F31E8D3D8F00EFF0D3 /* M13CheckboxSpiralController.swift */; };
+		3F21D4071E8D3D8F00EFF0D3 /* M13CheckboxStrokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3F41E8D3D8F00EFF0D3 /* M13CheckboxStrokeController.swift */; };
+		3F21D4081E8D3D8F00EFF0D3 /* M13CheckboxAddRemovePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3F61E8D3D8F00EFF0D3 /* M13CheckboxAddRemovePathGenerator.swift */; };
+		3F21D4091E8D3D8F00EFF0D3 /* M13CheckboxCheckPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3F71E8D3D8F00EFF0D3 /* M13CheckboxCheckPathGenerator.swift */; };
+		3F21D40A1E8D3D8F00EFF0D3 /* M13CheckboxDisclosurePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3F81E8D3D8F00EFF0D3 /* M13CheckboxDisclosurePathGenerator.swift */; };
+		3F21D40B1E8D3D8F00EFF0D3 /* M13CheckboxPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3F91E8D3D8F00EFF0D3 /* M13CheckboxPathGenerator.swift */; };
+		3F21D40C1E8D3D8F00EFF0D3 /* M13CheckboxRadioPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D3FA1E8D3D8F00EFF0D3 /* M13CheckboxRadioPathGenerator.swift */; };
+		3F21D40F1E8D3F1000EFF0D3 /* GasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21D40E1E8D3F1000EFF0D3 /* GasTableViewCell.swift */; };
 		3F61C8161E65DABC0038E7A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F61C8151E65DABC0038E7A7 /* AppDelegate.swift */; };
 		3F61C8181E65DABC0038E7A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F61C8171E65DABC0038E7A7 /* ViewController.swift */; };
 		3F61C81B1E65DABC0038E7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F61C8191E65DABC0038E7A7 /* Main.storyboard */; };
 		3F61C81D1E65DABC0038E7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F61C81C1E65DABC0038E7A7 /* Assets.xcassets */; };
 		3F61C8201E65DABC0038E7A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F61C81E1E65DABC0038E7A7 /* LaunchScreen.storyboard */; };
+		3F61C82B1E65DBFF0038E7A7 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F61C82A1E65DBFF0038E7A7 /* Comfortaa-Regular.ttf */; };
+		3F61C8311E65DF8C0038E7A7 /* AwesomeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F61C8301E65DF8C0038E7A7 /* AwesomeTextField.swift */; };
+		3F61C8361E65E4610038E7A7 /* EnterMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F61C8351E65E4610038E7A7 /* EnterMobileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F0545631E754EBE00177A4A /* RegistrationPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPageVC.swift; sourceTree = "<group>"; };
+		3F0545651E7551AC00177A4A /* EnterPayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPayVC.swift; sourceTree = "<group>"; };
+		3F0545671E7551D500177A4A /* EnterGasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterGasVC.swift; sourceTree = "<group>"; };
+		3F0545691E7551FC00177A4A /* EnterLoyalityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterLoyalityVC.swift; sourceTree = "<group>"; };
+		3F05456B1E75521600177A4A /* EnterLoyality2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterLoyality2VC.swift; sourceTree = "<group>"; };
+		3F05456D1E755D4400177A4A /* DotsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsVC.swift; sourceTree = "<group>"; };
+		3F21D3E41E8D3C3800EFF0D3 /* Networkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		3F21D3E71E8D3D8F00EFF0D3 /* M13Checkbox+IB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "M13Checkbox+IB.swift"; sourceTree = "<group>"; };
+		3F21D3E81E8D3D8F00EFF0D3 /* M13Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13Checkbox.swift; sourceTree = "<group>"; };
+		3F21D3E91E8D3D8F00EFF0D3 /* M13CheckboxAnimationGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxAnimationGenerator.swift; sourceTree = "<group>"; };
+		3F21D3EA1E8D3D8F00EFF0D3 /* M13CheckboxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxController.swift; sourceTree = "<group>"; };
+		3F21D3EB1E8D3D8F00EFF0D3 /* M13CheckboxGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxGestureRecognizer.swift; sourceTree = "<group>"; };
+		3F21D3ED1E8D3D8F00EFF0D3 /* M13CheckboxBounceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxBounceController.swift; sourceTree = "<group>"; };
+		3F21D3EE1E8D3D8F00EFF0D3 /* M13CheckboxDotController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxDotController.swift; sourceTree = "<group>"; };
+		3F21D3EF1E8D3D8F00EFF0D3 /* M13CheckboxExpandController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxExpandController.swift; sourceTree = "<group>"; };
+		3F21D3F01E8D3D8F00EFF0D3 /* M13CheckboxFadeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxFadeController.swift; sourceTree = "<group>"; };
+		3F21D3F11E8D3D8F00EFF0D3 /* M13CheckboxFillController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxFillController.swift; sourceTree = "<group>"; };
+		3F21D3F21E8D3D8F00EFF0D3 /* M13CheckboxFlatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxFlatController.swift; sourceTree = "<group>"; };
+		3F21D3F31E8D3D8F00EFF0D3 /* M13CheckboxSpiralController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxSpiralController.swift; sourceTree = "<group>"; };
+		3F21D3F41E8D3D8F00EFF0D3 /* M13CheckboxStrokeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxStrokeController.swift; sourceTree = "<group>"; };
+		3F21D3F61E8D3D8F00EFF0D3 /* M13CheckboxAddRemovePathGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxAddRemovePathGenerator.swift; sourceTree = "<group>"; };
+		3F21D3F71E8D3D8F00EFF0D3 /* M13CheckboxCheckPathGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxCheckPathGenerator.swift; sourceTree = "<group>"; };
+		3F21D3F81E8D3D8F00EFF0D3 /* M13CheckboxDisclosurePathGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxDisclosurePathGenerator.swift; sourceTree = "<group>"; };
+		3F21D3F91E8D3D8F00EFF0D3 /* M13CheckboxPathGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxPathGenerator.swift; sourceTree = "<group>"; };
+		3F21D3FA1E8D3D8F00EFF0D3 /* M13CheckboxRadioPathGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M13CheckboxRadioPathGenerator.swift; sourceTree = "<group>"; };
+		3F21D40E1E8D3F1000EFF0D3 /* GasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasTableViewCell.swift; sourceTree = "<group>"; };
 		3F61C8121E65DABC0038E7A7 /* PetrolPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrolPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F61C8151E65DABC0038E7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F61C8171E65DABC0038E7A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +77,9 @@
 		3F61C81C1E65DABC0038E7A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F61C81F1E65DABC0038E7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F61C8211E65DABC0038E7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F61C82A1E65DBFF0038E7A7 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		3F61C8301E65DF8C0038E7A7 /* AwesomeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeTextField.swift; sourceTree = "<group>"; };
+		3F61C8351E65E4610038E7A7 /* EnterMobileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterMobileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +93,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F21D3E61E8D3D8F00EFF0D3 /* CheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				3F21D3E71E8D3D8F00EFF0D3 /* M13Checkbox+IB.swift */,
+				3F21D3E81E8D3D8F00EFF0D3 /* M13Checkbox.swift */,
+				3F21D3E91E8D3D8F00EFF0D3 /* M13CheckboxAnimationGenerator.swift */,
+				3F21D3EA1E8D3D8F00EFF0D3 /* M13CheckboxController.swift */,
+				3F21D3EB1E8D3D8F00EFF0D3 /* M13CheckboxGestureRecognizer.swift */,
+				3F21D3EC1E8D3D8F00EFF0D3 /* Managers */,
+				3F21D3F51E8D3D8F00EFF0D3 /* Paths */,
+			);
+			path = CheckBox;
+			sourceTree = "<group>";
+		};
+		3F21D3EC1E8D3D8F00EFF0D3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3F21D3ED1E8D3D8F00EFF0D3 /* M13CheckboxBounceController.swift */,
+				3F21D3EE1E8D3D8F00EFF0D3 /* M13CheckboxDotController.swift */,
+				3F21D3EF1E8D3D8F00EFF0D3 /* M13CheckboxExpandController.swift */,
+				3F21D3F01E8D3D8F00EFF0D3 /* M13CheckboxFadeController.swift */,
+				3F21D3F11E8D3D8F00EFF0D3 /* M13CheckboxFillController.swift */,
+				3F21D3F21E8D3D8F00EFF0D3 /* M13CheckboxFlatController.swift */,
+				3F21D3F31E8D3D8F00EFF0D3 /* M13CheckboxSpiralController.swift */,
+				3F21D3F41E8D3D8F00EFF0D3 /* M13CheckboxStrokeController.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3F21D3F51E8D3D8F00EFF0D3 /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				3F21D3F61E8D3D8F00EFF0D3 /* M13CheckboxAddRemovePathGenerator.swift */,
+				3F21D3F71E8D3D8F00EFF0D3 /* M13CheckboxCheckPathGenerator.swift */,
+				3F21D3F81E8D3D8F00EFF0D3 /* M13CheckboxDisclosurePathGenerator.swift */,
+				3F21D3F91E8D3D8F00EFF0D3 /* M13CheckboxPathGenerator.swift */,
+				3F21D3FA1E8D3D8F00EFF0D3 /* M13CheckboxRadioPathGenerator.swift */,
+			);
+			path = Paths;
+			sourceTree = "<group>";
+		};
+		3F21D40D1E8D3EFD00EFF0D3 /* cellls */ = {
+			isa = PBXGroup;
+			children = (
+				3F21D40E1E8D3F1000EFF0D3 /* GasTableViewCell.swift */,
+			);
+			name = cellls;
+			sourceTree = "<group>";
+		};
 		3F61C8091E65DABC0038E7A7 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +161,9 @@
 		3F61C8141E65DABC0038E7A7 /* PetrolPay */ = {
 			isa = PBXGroup;
 			children = (
+				3F61C8341E65E4610038E7A7 /* VCs */,
+				3F61C82F1E65DF8C0038E7A7 /* helpers */,
+				3F61C8291E65DBFF0038E7A7 /* fonts */,
 				3F61C8151E65DABC0038E7A7 /* AppDelegate.swift */,
 				3F61C8171E65DABC0038E7A7 /* ViewController.swift */,
 				3F61C8191E65DABC0038E7A7 /* Main.storyboard */,
@@ -62,6 +172,39 @@
 				3F61C8211E65DABC0038E7A7 /* Info.plist */,
 			);
 			path = PetrolPay;
+			sourceTree = "<group>";
+		};
+		3F61C8291E65DBFF0038E7A7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3F61C82A1E65DBFF0038E7A7 /* Comfortaa-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		3F61C82F1E65DF8C0038E7A7 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3F21D3E61E8D3D8F00EFF0D3 /* CheckBox */,
+				3F21D3E41E8D3C3800EFF0D3 /* Networkable.swift */,
+				3F61C8301E65DF8C0038E7A7 /* AwesomeTextField.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		3F61C8341E65E4610038E7A7 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				3F21D40D1E8D3EFD00EFF0D3 /* cellls */,
+				3F0545631E754EBE00177A4A /* RegistrationPageVC.swift */,
+				3F61C8351E65E4610038E7A7 /* EnterMobileVC.swift */,
+				3F0545651E7551AC00177A4A /* EnterPayVC.swift */,
+				3F0545671E7551D500177A4A /* EnterGasVC.swift */,
+				3F0545691E7551FC00177A4A /* EnterLoyalityVC.swift */,
+				3F05456B1E75521600177A4A /* EnterLoyality2VC.swift */,
+				3F05456D1E755D4400177A4A /* DotsVC.swift */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F61C82B1E65DBFF0038E7A7 /* Comfortaa-Regular.ttf in Resources */,
 				3F61C8201E65DABC0038E7A7 /* LaunchScreen.storyboard in Resources */,
 				3F61C81D1E65DABC0038E7A7 /* Assets.xcassets in Resources */,
 				3F61C81B1E65DABC0038E7A7 /* Main.storyboard in Resources */,
@@ -137,8 +281,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0545681E7551D500177A4A /* EnterGasVC.swift in Sources */,
+				3F21D3FD1E8D3D8F00EFF0D3 /* M13CheckboxAnimationGenerator.swift in Sources */,
+				3F21D3FB1E8D3D8F00EFF0D3 /* M13Checkbox+IB.swift in Sources */,
+				3F21D4021E8D3D8F00EFF0D3 /* M13CheckboxExpandController.swift in Sources */,
+				3F21D3FE1E8D3D8F00EFF0D3 /* M13CheckboxController.swift in Sources */,
+				3F21D4051E8D3D8F00EFF0D3 /* M13CheckboxFlatController.swift in Sources */,
+				3F21D4081E8D3D8F00EFF0D3 /* M13CheckboxAddRemovePathGenerator.swift in Sources */,
+				3F21D3E51E8D3C3800EFF0D3 /* Networkable.swift in Sources */,
+				3F21D4061E8D3D8F00EFF0D3 /* M13CheckboxSpiralController.swift in Sources */,
+				3F05456C1E75521600177A4A /* EnterLoyality2VC.swift in Sources */,
+				3F21D4091E8D3D8F00EFF0D3 /* M13CheckboxCheckPathGenerator.swift in Sources */,
+				3F21D40F1E8D3F1000EFF0D3 /* GasTableViewCell.swift in Sources */,
+				3F05456E1E755D4400177A4A /* DotsVC.swift in Sources */,
+				3F21D40A1E8D3D8F00EFF0D3 /* M13CheckboxDisclosurePathGenerator.swift in Sources */,
+				3F21D40C1E8D3D8F00EFF0D3 /* M13CheckboxRadioPathGenerator.swift in Sources */,
 				3F61C8181E65DABC0038E7A7 /* ViewController.swift in Sources */,
+				3F21D4001E8D3D8F00EFF0D3 /* M13CheckboxBounceController.swift in Sources */,
+				3F21D4041E8D3D8F00EFF0D3 /* M13CheckboxFillController.swift in Sources */,
+				3F21D4031E8D3D8F00EFF0D3 /* M13CheckboxFadeController.swift in Sources */,
+				3F61C8361E65E4610038E7A7 /* EnterMobileVC.swift in Sources */,
+				3F21D4011E8D3D8F00EFF0D3 /* M13CheckboxDotController.swift in Sources */,
+				3F21D4071E8D3D8F00EFF0D3 /* M13CheckboxStrokeController.swift in Sources */,
+				3F21D3FC1E8D3D8F00EFF0D3 /* M13Checkbox.swift in Sources */,
+				3F0545661E7551AC00177A4A /* EnterPayVC.swift in Sources */,
+				3F61C8311E65DF8C0038E7A7 /* AwesomeTextField.swift in Sources */,
+				3F21D3FF1E8D3D8F00EFF0D3 /* M13CheckboxGestureRecognizer.swift in Sources */,
 				3F61C8161E65DABC0038E7A7 /* AppDelegate.swift in Sources */,
+				3F21D40B1E8D3D8F00EFF0D3 /* M13CheckboxPathGenerator.swift in Sources */,
+				3F05456A1E7551FC00177A4A /* EnterLoyalityVC.swift in Sources */,
+				3F0545641E754EBE00177A4A /* RegistrationPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +472,7 @@
 				3F61C8261E65DABC0038E7A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,14 +1,498 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Enter tel number-->
+        <scene sceneID="vbS-Ly-wnJ">
+            <objects>
+                <viewController storyboardIdentifier="EnterMobileVC" title="Enter tel number" id="zuq-QN-dfY" customClass="EnterMobileVC" customModule="PetrolPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RxE-oJ-QdP"/>
+                        <viewControllerLayoutGuide type="bottom" id="zcr-Nu-emG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VTm-34-u3Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мобильный телефон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cw5-QM-q4K">
+                                <rect key="frame" x="24" y="35" width="193.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.74117647058823533" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="bZK-KT-5NH" customClass="AwesomeTextField" customModule="PetrolPay" customModuleProvider="target">
+                                <rect key="frame" x="24" y="107" width="327" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="uFT-aM-H1q"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                        <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underLineAlpha">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageWidth">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageHeight">
+                                        <real key="value" value="26.300000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="smartphone-call"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfc-rp-FxA">
+                                <rect key="frame" x="56" y="562" width="263" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="jCr-4c-qKk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <state key="normal" title="Продолжить" backgroundImage="button">
+                                    <color key="titleColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bZK-KT-5NH" firstAttribute="top" secondItem="Cw5-QM-q4K" secondAttribute="bottom" constant="53" id="6TY-t7-Qr9"/>
+                            <constraint firstItem="zcr-Nu-emG" firstAttribute="top" secondItem="Mfc-rp-FxA" secondAttribute="bottom" constant="40" id="IKV-M3-9AF"/>
+                            <constraint firstItem="Mfc-rp-FxA" firstAttribute="leading" secondItem="VTm-34-u3Z" secondAttribute="leadingMargin" constant="40" id="Iih-a7-MeF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bZK-KT-5NH" secondAttribute="trailing" constant="8" id="JEm-Cu-9FH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mfc-rp-FxA" secondAttribute="trailing" constant="40" id="K1c-t0-BDY"/>
+                            <constraint firstItem="Cw5-QM-q4K" firstAttribute="leading" secondItem="VTm-34-u3Z" secondAttribute="leadingMargin" constant="8" id="eIv-Vz-sy4"/>
+                            <constraint firstItem="Cw5-QM-q4K" firstAttribute="top" secondItem="RxE-oJ-QdP" secondAttribute="bottom" constant="15" id="eRS-37-jAP"/>
+                            <constraint firstItem="bZK-KT-5NH" firstAttribute="leading" secondItem="VTm-34-u3Z" secondAttribute="leadingMargin" constant="8" id="hOd-Cc-LJd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textfield" destination="bZK-KT-5NH" id="wwL-V1-uqf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qhn-Zt-1pf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175.19999999999999" y="-730.88455772113946"/>
+        </scene>
+        <!--Enter PayVC-->
+        <scene sceneID="9me-MT-xWc">
+            <objects>
+                <viewController storyboardIdentifier="EnterPayVC" id="15n-4C-DuX" customClass="EnterPayVC" customModule="PetrolPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pan-l5-6de"/>
+                        <viewControllerLayoutGuide type="bottom" id="w6E-eK-7Lr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wau-z7-Ytl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить способ оплаты" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La1-xh-kjg">
+                                <rect key="frame" x="24" y="35" width="245" height="19"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2J-hL-TUY">
+                                <rect key="frame" x="56" y="562" width="263" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="YI6-Cd-qLB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <state key="normal" title="Продолжить" backgroundImage="button">
+                                    <color key="titleColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер карты" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjX-ux-74J" customClass="AwesomeTextField" customModule="PetrolPay" customModuleProvider="target">
+                                <rect key="frame" x="24" y="107" width="327" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="o9x-v8-HgM"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                        <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageWidth">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageHeight">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="CreditCard"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="127" translatesAutoresizingMaskIntoConstraints="NO" id="S8p-f8-vQY">
+                                <rect key="frame" x="24" y="220" width="327" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Срок действия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D2j-L1-Pcy" customClass="AwesomeTextField" customModule="PetrolPay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="rap-bu-zGn"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZ8-8E-av0" customClass="AwesomeTextField" customModule="PetrolPay" customModuleProvider="target">
+                                        <rect key="frame" x="227" y="0.0" width="100" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="OS3-BH-TQb"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="waa-vO-YKl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="La1-xh-kjg" firstAttribute="top" secondItem="Pan-l5-6de" secondAttribute="bottom" constant="15" id="7nB-iP-bMg"/>
+                            <constraint firstItem="S8p-f8-vQY" firstAttribute="leading" secondItem="Wau-z7-Ytl" secondAttribute="leadingMargin" constant="8" id="Sa5-9A-FvI"/>
+                            <constraint firstItem="fjX-ux-74J" firstAttribute="top" secondItem="La1-xh-kjg" secondAttribute="bottom" constant="53" id="T1j-rV-iBA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S8p-f8-vQY" secondAttribute="trailing" constant="8" id="dV8-El-vAv"/>
+                            <constraint firstItem="w6E-eK-7Lr" firstAttribute="top" secondItem="P2J-hL-TUY" secondAttribute="bottom" constant="40" id="fy2-dW-eN9"/>
+                            <constraint firstItem="La1-xh-kjg" firstAttribute="leading" secondItem="Wau-z7-Ytl" secondAttribute="leadingMargin" constant="8" id="iDb-cM-SzV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P2J-hL-TUY" secondAttribute="trailing" constant="40" id="lAA-CX-TOW"/>
+                            <constraint firstItem="S8p-f8-vQY" firstAttribute="top" secondItem="fjX-ux-74J" secondAttribute="bottom" constant="53" id="md1-fz-Zls"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fjX-ux-74J" secondAttribute="trailing" constant="8" id="nNk-I3-fk4"/>
+                            <constraint firstItem="fjX-ux-74J" firstAttribute="leading" secondItem="Wau-z7-Ytl" secondAttribute="leadingMargin" constant="8" id="p8t-j9-t9b"/>
+                            <constraint firstItem="P2J-hL-TUY" firstAttribute="leading" secondItem="Wau-z7-Ytl" secondAttribute="leadingMargin" constant="40" id="q6f-YX-u7V"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ad-t8-uPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="-731"/>
+        </scene>
+        <!--Enter GasVC-->
+        <scene sceneID="B7C-lA-kOH">
+            <objects>
+                <viewController storyboardIdentifier="EnterGasVC" id="NXN-5O-Nqq" customClass="EnterGasVC" customModule="PetrolPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hjB-De-KHE"/>
+                        <viewControllerLayoutGuide type="bottom" id="8O6-3s-dRD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0bT-3L-4zc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите топливо" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUS-P6-v3W">
+                                <rect key="frame" x="95.5" y="35" width="184" height="19"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pL-B5-5d9">
+                                <rect key="frame" x="56" y="562" width="263" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="BpJ-xh-qHj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <state key="normal" title="Продолжить" backgroundImage="button">
+                                    <color key="titleColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4b2-80-lNf">
+                                <rect key="frame" x="0.0" y="62" width="375" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="gas_cell" id="Kq7-yP-ooW" customClass="GasTableViewCell" customModule="PetrolPay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kq7-yP-ooW" id="P6G-0D-L4b">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBd-Se-AGP" customClass="M13Checkbox" customModule="PetrolPay" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="50" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="a5p-LX-441"/>
+                                                        <constraint firstAttribute="width" constant="50" id="d0i-Hs-0wo"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
+                                                            <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="secondaryCheckmarkTintColor">
+                                                            <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auV-Tf-uh2">
+                                                    <rect key="frame" x="162.5" y="20.5" width="50" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="auV-Tf-uh2" firstAttribute="centerX" secondItem="P6G-0D-L4b" secondAttribute="centerX" id="URA-Fr-PEJ"/>
+                                                <constraint firstItem="JBd-Se-AGP" firstAttribute="centerY" secondItem="P6G-0D-L4b" secondAttribute="centerY" id="br4-MI-f3u"/>
+                                                <constraint firstItem="JBd-Se-AGP" firstAttribute="leading" secondItem="P6G-0D-L4b" secondAttribute="leading" constant="20" id="bx9-pH-ii1"/>
+                                                <constraint firstItem="auV-Tf-uh2" firstAttribute="centerY" secondItem="P6G-0D-L4b" secondAttribute="centerY" id="wue-ZX-AS5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkBox" destination="JBd-Se-AGP" id="vSn-MK-3J9"/>
+                                            <outlet property="label" destination="auV-Tf-uh2" id="5y8-Bs-R9k"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NXN-5O-Nqq" id="hdU-xU-222"/>
+                                    <outlet property="delegate" destination="NXN-5O-Nqq" id="ihA-R3-inE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4b2-80-lNf" firstAttribute="top" secondItem="DUS-P6-v3W" secondAttribute="bottom" constant="8" id="Gru-H0-4iN"/>
+                            <constraint firstItem="DUS-P6-v3W" firstAttribute="centerX" secondItem="0bT-3L-4zc" secondAttribute="centerX" id="LOY-zS-Ofn"/>
+                            <constraint firstItem="4b2-80-lNf" firstAttribute="leading" secondItem="0bT-3L-4zc" secondAttribute="leading" id="Pgu-X9-BDj"/>
+                            <constraint firstItem="8O6-3s-dRD" firstAttribute="top" secondItem="2pL-B5-5d9" secondAttribute="bottom" constant="40" id="UdO-1Q-UIs"/>
+                            <constraint firstItem="DUS-P6-v3W" firstAttribute="top" secondItem="hjB-De-KHE" secondAttribute="bottom" constant="15" id="Uqu-IC-FRN"/>
+                            <constraint firstItem="2pL-B5-5d9" firstAttribute="leading" secondItem="0bT-3L-4zc" secondAttribute="leadingMargin" constant="40" id="Z5Y-Lc-LxG"/>
+                            <constraint firstAttribute="trailing" secondItem="4b2-80-lNf" secondAttribute="trailing" id="diW-di-31l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2pL-B5-5d9" secondAttribute="trailing" constant="40" id="jez-Mp-Ldw"/>
+                            <constraint firstItem="2pL-B5-5d9" firstAttribute="top" secondItem="4b2-80-lNf" secondAttribute="bottom" constant="8" id="rMQ-xh-QCM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="4b2-80-lNf" id="Zbr-ga-6SR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DdB-m9-S4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328.8" y="-731.78410794602701"/>
+        </scene>
+        <!--Enter LoyalityVC-->
+        <scene sceneID="PcH-Qn-cA2">
+            <objects>
+                <viewController storyboardIdentifier="EnterLoyalityVC" id="rME-Lb-Svk" customClass="EnterLoyalityVC" customModule="PetrolPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bov-sh-0Rl"/>
+                        <viewControllerLayoutGuide type="bottom" id="bi7-Kz-PSp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="paw-KN-BrN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добваить карту лояльности" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOh-V2-Qeh">
+                                <rect key="frame" x="24" y="35" width="245" height="38"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI2-zV-ylI">
+                                <rect key="frame" x="56" y="562" width="263" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="0KO-oi-AzQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <state key="normal" title="Пропустить" backgroundImage="button">
+                                    <color key="titleColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e2x-ti-Nxq">
+                                <rect key="frame" x="0.0" y="81" width="375" height="473"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="gas_cell" id="H7J-Q9-2m8" customClass="GasTableViewCell" customModule="PetrolPay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H7J-Q9-2m8" id="Vg6-9y-59j">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szd-54-iIv" customClass="M13Checkbox" customModule="PetrolPay" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="50" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="REy-5U-GIe"/>
+                                                        <constraint firstAttribute="height" constant="50" id="nt4-6i-FVL"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
+                                                            <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="secondaryCheckmarkTintColor">
+                                                            <color key="value" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DB0-mq-q4g">
+                                                    <rect key="frame" x="162" y="21" width="50" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DB0-mq-q4g" firstAttribute="centerX" secondItem="Vg6-9y-59j" secondAttribute="centerX" id="BYb-ZY-rjW"/>
+                                                <constraint firstItem="DB0-mq-q4g" firstAttribute="centerY" secondItem="Vg6-9y-59j" secondAttribute="centerY" id="W9x-dL-R8b"/>
+                                                <constraint firstItem="szd-54-iIv" firstAttribute="leading" secondItem="Vg6-9y-59j" secondAttribute="leading" constant="20" id="b0q-oZ-BL8"/>
+                                                <constraint firstItem="szd-54-iIv" firstAttribute="centerY" secondItem="Vg6-9y-59j" secondAttribute="centerY" id="dLI-LT-g4Z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkBox" destination="szd-54-iIv" id="QbX-wb-rQL"/>
+                                            <outlet property="label" destination="DB0-mq-q4g" id="92T-YV-qEL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rME-Lb-Svk" id="7ud-vL-qIL"/>
+                                    <outlet property="delegate" destination="rME-Lb-Svk" id="Lzh-n6-Ym1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dI2-zV-ylI" firstAttribute="leading" secondItem="paw-KN-BrN" secondAttribute="leadingMargin" constant="40" id="Du6-4A-NEp"/>
+                            <constraint firstItem="e2x-ti-Nxq" firstAttribute="top" secondItem="IOh-V2-Qeh" secondAttribute="bottom" constant="8" id="Nne-Km-7Ue"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dI2-zV-ylI" secondAttribute="trailing" constant="40" id="Oq8-L3-zdw"/>
+                            <constraint firstAttribute="trailing" secondItem="e2x-ti-Nxq" secondAttribute="trailing" id="OyX-xn-P90"/>
+                            <constraint firstItem="e2x-ti-Nxq" firstAttribute="leading" secondItem="paw-KN-BrN" secondAttribute="leading" id="PpR-Ap-SCu"/>
+                            <constraint firstItem="dI2-zV-ylI" firstAttribute="top" secondItem="e2x-ti-Nxq" secondAttribute="bottom" constant="8" id="WAp-qK-HMr"/>
+                            <constraint firstItem="bi7-Kz-PSp" firstAttribute="top" secondItem="dI2-zV-ylI" secondAttribute="bottom" constant="40" id="fwV-HJ-A1J"/>
+                            <constraint firstItem="IOh-V2-Qeh" firstAttribute="top" secondItem="Bov-sh-0Rl" secondAttribute="bottom" constant="15" id="lbA-RB-s4l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IOh-V2-Qeh" secondAttribute="trailing" constant="90" id="uFN-NN-oJi"/>
+                            <constraint firstItem="IOh-V2-Qeh" firstAttribute="leading" secondItem="paw-KN-BrN" secondAttribute="leadingMargin" constant="8" id="y2H-24-mEy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="e2x-ti-Nxq" id="UE6-ub-eff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogU-14-gF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060" y="-731.78410794602701"/>
+        </scene>
+        <!--Enter Loyality2VC-->
+        <scene sceneID="mF2-0V-zUL">
+            <objects>
+                <viewController storyboardIdentifier="EnterLoyality2VC" id="hwH-kv-J3F" customClass="EnterLoyality2VC" customModule="PetrolPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aU1-V3-gKc"/>
+                        <viewControllerLayoutGuide type="bottom" id="GvK-Xv-xgP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uKP-fy-Yu2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить карту лояльности" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EB2-nr-5hV">
+                                <rect key="frame" x="24" y="35" width="245" height="38"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ys-H6-eTQ">
+                                <rect key="frame" x="56" y="562" width="263" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="JAU-rb-5kD"/>
+                                    <constraint firstAttribute="height" constant="65" id="Zyv-Tt-pYF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <state key="normal" title="Продолжить" backgroundImage="button">
+                                    <color key="titleColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EB2-nr-5hV" firstAttribute="top" secondItem="aU1-V3-gKc" secondAttribute="bottom" constant="15" id="5Rm-2d-6TD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Ys-H6-eTQ" secondAttribute="trailing" constant="40" id="G01-L3-PUY"/>
+                            <constraint firstItem="GvK-Xv-xgP" firstAttribute="top" secondItem="9Ys-H6-eTQ" secondAttribute="bottom" constant="40" id="LoT-is-cVo"/>
+                            <constraint firstItem="9Ys-H6-eTQ" firstAttribute="leading" secondItem="uKP-fy-Yu2" secondAttribute="leadingMargin" constant="40" id="N8C-E6-kyn"/>
+                            <constraint firstItem="EB2-nr-5hV" firstAttribute="leading" secondItem="uKP-fy-Yu2" secondAttribute="leadingMargin" constant="8" id="rNF-Ah-qhh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EB2-nr-5hV" secondAttribute="trailing" constant="90" id="vpG-0A-k0o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSY-kd-tTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2793" y="-732"/>
+        </scene>
+        <!--Registration PageVC-->
+        <scene sceneID="I4G-tH-DeT">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" doubleSided="YES" id="Y0q-CE-Tgs" customClass="RegistrationPageVC" customModule="PetrolPay" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mke-m6-YRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1039" y="-731"/>
+        </scene>
+        <!--DotsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DotsVC" customModule="PetrolPay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +500,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQv-XM-ZdY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="Y0q-CE-Tgs" kind="embed" id="pj7-vR-M1p"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="YXF-1w-dgk">
+                                <rect key="frame" x="152" y="520" width="71" height="37"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lQv-XM-ZdY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2Yd-cT-OoL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YXF-1w-dgk" secondAttribute="bottom" constant="110" id="3Kk-y9-PMn"/>
+                            <constraint firstItem="YXF-1w-dgk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgb-bB-jKt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lQv-XM-ZdY" secondAttribute="bottom" id="fTV-AI-ajc"/>
+                            <constraint firstItem="lQv-XM-ZdY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gGR-5I-kMN"/>
+                            <constraint firstAttribute="trailing" secondItem="lQv-XM-ZdY" secondAttribute="trailing" id="h99-Fw-P3w"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="lQv-XM-ZdY" id="l6z-W8-JPi"/>
+                        <outlet property="pageControl" destination="YXF-1w-dgk" id="DKa-wm-Co1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1863" y="-731"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CreditCard" width="70" height="52"/>
+        <image name="button" width="588" height="155"/>
+        <image name="smartphone-call" width="41" height="69"/>
+    </resources>
 </document>
